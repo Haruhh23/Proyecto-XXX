@@ -1,0 +1,1 @@
+bin/mascota: src/Mascota.cpp include/Mascota.hpp include/Entrenador.hpp
