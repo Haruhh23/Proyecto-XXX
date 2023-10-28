@@ -1,1 +1,1 @@
-./bin/Mascota
+./bin/ejecutable

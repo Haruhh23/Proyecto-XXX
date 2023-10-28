@@ -1,1 +1,1 @@
-g++ src/main.cpp -o bin/Mascota -I include
+c++ src/main.cpp -o bin/ejecutable -I include
