@@ -1,9 +1,92 @@
-class mascota 
-{
-    +Establecer_Nombre()
-}
+class conductor 
+class vehiculo
+class jugador
+class pantalla
+class fondo
 
-class Entrenador
-{
-    +Asignar_Nombre()
-}
+class modificacion
+class tienda 
+class motor
+class nitrogeno
+class turbo
+class suspension
+class filtro_de_aire
+class rines
+class escape
+class computadora
+class faros
+class cooler 
+class pintura
+class asiento 
+
+
+class controlador 
+class acelerador
+class clutch
+class freno 
+class paletas_de_cambio
+
+class medidores
+class tacometro
+class RPM
+class MPH
+class cronometro
+
+class item
+class stat_points
+class exp_points
+class cash_points
+class dolares
+class cajas
+
+
+conductor <|-- jugador
+modificacion <|-- Motor
+modificacion <|-- nitrogeno
+modificacion <|-- turbo
+modificacion <|-- suspension
+modificacion <|-- filtro_de_aire
+modificacion <|-- rines
+modificacion <|-- escape
+modificacion <|-- computadora
+modificacion <|-- faros
+modificacion <|-- cooler
+modificacion <|-- pintura
+modificacion <|-- asiento
+item <|-- stat_points
+item <|--exp_points
+item <|--cash_points
+item <|--dolares
+item <|--cajas
+medidores <|-- tacometro
+medidores <|--RPM
+medidores <|--MPH
+medidores <|--cronometro
+controlador <|-- acelerador
+controlador <|--freno
+controlador <|--clutch
+controlador <|--paletas_de_cambio
+
+pantalla --* tacometro
+pantalla--*RPM
+pantalla--* MPH
+pantalla--* acelerador
+pantalla--* clutch
+pantalla--* freno
+pantalla--* cronometro
+pantalla--* dolares
+pantalla--* fondo
+vehiculo--*motor
+vehiculo--*acelerador
+vehiculo--*freno
+vehiculo--*clutch
+vehiculo--*paletas_de_cambio
+
+jugador--o conductor
+conductor--o vehiculo
+conductor--o controlador
+vehiculo--o modificacion
+modificacion--o dolares
+pantalla --o medidores
+
+@enduml
