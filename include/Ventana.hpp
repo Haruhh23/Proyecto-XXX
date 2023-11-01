@@ -41,7 +41,7 @@ public:
     }
     void Cerrar()
     {
-        this->ejecucion = false
+        this->ejecucion = false;
     }
     ~Ventana()
     {

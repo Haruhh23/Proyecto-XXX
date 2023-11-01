@@ -1,4 +1,4 @@
-#pragma once
+
 #include<Ventana.hpp>
 #include <Dibujo.hpp>
 #include <curses.h>
